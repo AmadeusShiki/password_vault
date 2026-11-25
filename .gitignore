@@ -1,0 +1,35 @@
+# PyInstaller / 构建产物
+build/
+dist/
+*.spec
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# 运行时数据（含加密的密码库，绝不入库）
+vault_data/
+vault.md
+*.bak
+
+# 调试时临时产生的图（README 用的三张除外）
+_exe*.png
+_verify*.png
+_shot*.png
+_check*.png
+_runner_tmp/
+*.log
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 测试临时
+.pytest_cache/
+.coverage
+htmlcov/
