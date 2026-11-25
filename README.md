@@ -24,7 +24,6 @@ Resize the window and she swaps to a larger artwork automatically
 (128 → 176 → 200 → 260 → 320 → 380 px, one step at a time).
 
 > **Artwork credit**
-> Original whale-girl character: **上善无形 (Shanshan Wuxing)** — bilibili `space.bilibili.com/4456176`
 > DeepSeek maid redesign: **ZipZipPipe** — bilibili `space.bilibili.com/4168597`
 > Chibi reference sheet compiled by the open whale-girl asset library · **TreapGoGo**
 > (`treapgogo.github.io/deepseek-whale-girl`)
@@ -117,10 +116,10 @@ with the session passphrase.
 
 ### 3.1 Run from source
 
-Requires Python 3.10+ and `cryptography`:
+Requires Python 3.10+.
 
 ```powershell
-python -m pip install cryptography
+python -m pip install -r requirements.txt
 python vault_app.py
 ```
 
@@ -200,6 +199,7 @@ password_vault/
 ├── vault_data/          Created at runtime, never committed
 │   ├── vault.md         The one and only vault file (no copies are ever made)
 │   └── config.json
+├── requirements.txt     Runtime dependency (cryptography)
 ├── README.md            English (default)
 └── README.zh-CN.md      简体中文
 ```

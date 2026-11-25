@@ -21,7 +21,6 @@
 窗口拉大时她会自动换更大的立绘（128 → 176 → 200 → 260 → 320 → 380 px 逐档上升）。
 
 > **形象来源与署名**
-> 鲸鱼娘原角色：**上善无形**（B 站 space.bilibili.com/4456176）；
 > DeepSeek 女仆形象改编：**ZipZipPipe**（space.bilibili.com/4168597）；
 > Q 版设定图整理：鲸鱼娘开源资产库 · **TreapGoGo**
 > （treapgogo.github.io/deepseek-whale-girl）；
@@ -104,10 +103,10 @@ GCM 自带完整性校验，密文被改一位就解不开 —— 这是特性�
 
 ### 3.1 源码运行
 
-需要 Python 3.10+ 和 `cryptography`：
+需要 Python 3.10+：
 
 ```powershell
-python -m pip install cryptography
+python -m pip install -r requirements.txt
 python vault_app.py
 ```
 
@@ -183,6 +182,7 @@ password_vault/
 ├── vault_data/          运行时生成，不入库
 │   ├── vault.md         唯一的库文件（程序不产生任何副本）
 │   └── config.json
+├── requirements.txt     运行依赖（cryptography）
 ├── README.md            English（默认）
 └── README.zh-CN.md      简体中文
 ```
